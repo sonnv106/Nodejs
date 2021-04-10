@@ -1,0 +1,9 @@
+form(action="/todos/create", method="POST")
+  input(type="text" name="work")
+  button  Create
+form(action="/todos", method="GET")
+  input(type="text" name="q")
+  button  Search
+ul
+  each todo in todos
+    li= todo.work

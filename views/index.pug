@@ -6,4 +6,7 @@ form(action="/todos", method="GET")
   button  Search
 ul
   each todo in todos
-    li= todo.work
+    li
+      span= todo.work 
+      span &nbsp
+      a(href= "/todos/"+ todo.id + "/delete") Delete
